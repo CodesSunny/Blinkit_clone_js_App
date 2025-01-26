@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+:root{
+    --blue-clr: blue;
+    --gray-clr: gray;
+    --clr-light-gray :#7f7f7f97;
+    --white-text : #fff;
+    --clr-black : #000;
+    --login-btn-clr :rgb(54, 54, 54);
+    --cart-bg : #06410F;
+}
+
+/* header start */
+
+header{
+    height: 92px;
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header-left-section{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.vertical-bar{
+    width: 1px;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+.delivery-location{
+    display: flex;
+    flex-direction: column;
+}
+
+/* search bar */
+
+.header-middle-section{
+    flex-grow: 1;
+    height: 50%;
+    margin: auto;
+    padding: 10px 20px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background: #F8F8F8;
+    border: 1px solid #797979;
+    border-radius: 10px;
+}
+
+
+
+.header-middle-section input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.5vw;
+}
+
+.header-middle-section i{
+    font-size: 1.2vw;
+}
+
+/* login cart section */
+.header-right-section{
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vw;
+}
+
+.login-btn{
+    font-size: 1.2vw;
+    background: inherit;
+    color: var(--login-btn-clr);
+    border: none;
+    outline: none;
+}
+
+.mycart-btn{
+    background: var(--cart-bg);
+    color: var(--white-text);
+    font-size: 1.2vw;
+    padding: 18px ;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mycart-btn i{
+    font-size: 1.5vw;
+}
+
+/* profile */
+.profile{
+    display: none;
+    margin: auto;
+    padding: 20px;
+    font-size: 2.2vw;
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile responsive */
+@media only screen and (min-width: 500px) and (max-width : 1020px){
+    header{
+        height: 150px;
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .header-left-section .logo,.vertical-bar,.header-right-section{
+        display: none;
+    }
+
+    .header-left-section, .header-middle-section{
+        justify-content: left;
+    }
+
+    .header-middle-section input{
+        width: calc(80vw);
+    }
+
+    .header-middle-section input, .header-middle-section i{
+        font-size: 4vw;
+    }
+
+    .profile{
+        display: block;
+        font-size: 6vw;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+}
