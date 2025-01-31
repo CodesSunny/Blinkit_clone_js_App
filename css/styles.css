@@ -340,8 +340,17 @@ footer{
     gap: 50px;
 }
 
+.footer-upper-section, .footer-lower-section{
+    width: 85%;
+}
+
+.footer-lower-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .footer-upper-section{  
-    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -357,8 +366,8 @@ footer .footer-useful-links-container{
 .links-wrapper, .catagories-wrapper{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 30%;
+    justify-content: space-evenly;
+    /* gap: 30%; */
 }
 
 .catagories-wrapper{
@@ -366,13 +375,16 @@ footer .footer-useful-links-container{
 }
 
 .links1, .links2, .links3,.catagory1,.catagory2,.catagory3{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     color: gray;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     text-transform: capitalize;
 }
+
+
 
 footer .footer-catagories-container{
     flex-basis: 65%; 
@@ -384,21 +396,77 @@ footer .footer-catagories-container{
 .catagory-titles{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.3rem;
 }
 
 .catagory-titles span{
     color: green;
-    font-size: 1.2rem;
+    font-size: 1.3vw;
 }
 
-.footer-lower-section{
-    background: cyan;
+.footer-lower1, .footer-lower2{
     width: 100%;
 }
 
+.footer-lower1{
+    background: rgba(128, 128, 128, 0.037);
+    /* padding: 20px 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+.footer-lower1-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
 
+.footer-lower2{
+    color: gray;
+    font-size: 1.1vw;
+    padding: 0 10px;
+}
+
+.google-play-image{
+    width: 100px;
+
+}
+
+.play-store-image{
+    width: 170px;
+}
+
+.google-play-image img{
+    width: 100%;
+}
+
+.play-store-image img{
+    width: 100%;
+}
+
+.footer-lower1-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+}
+
+.social-icons i{
+    font-size: 2vw;  
+}
 
 
 
