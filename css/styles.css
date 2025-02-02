@@ -200,6 +200,7 @@ header{
 .display-items-wrapper{
     width: 100%;
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -210,7 +211,6 @@ header{
     display: flex;
     align-items: center;
     gap: 1%;
-
 }
 
 .display-items-image-box{
@@ -433,6 +433,7 @@ footer .footer-catagories-container{
     color: gray;
     font-size: 1.5vw;
     padding: 0 10px;
+    text-align: justify;
 }
 
 .google-play-image{
@@ -474,9 +475,9 @@ footer .footer-catagories-container{
 
 
 
-/* -----------------mobile responsive--------------- */
+/* -----------------tablet responsive--------------- */
 
-@media only screen and (max-width : 1020px){
+@media only screen and (max-width : 1020px) and(min-width: 401px){
     header{
         height: 150px;
         flex-direction: column;
@@ -513,6 +514,11 @@ footer .footer-catagories-container{
         display: none;
     }
 
+    /*---------- middle content--------- */
+
+
+
+    /* ----------footer responsive-------- */
     .footer-lower1{
         flex-direction: column;
         gap: 0;
@@ -543,5 +549,177 @@ footer .footer-catagories-container{
 
     .footer-lower2{
         font-size: 2vw;
+    }
+}
+
+
+
+/* -----------------mobile responsive-- */
+@media only screen and (max-width: 400px){
+    header{
+        height: 120px;
+        flex-direction: column;
+        align-items:center;
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .header-left-section .logo,.vertical-bar,.header-right-section{
+        display: none;
+    }
+
+    .delivery-location h3{
+        font-size: 4vw;
+    }
+    
+    .location span{
+        font-size: 3.5vw;
+    }
+
+    .header-left-section, .header-middle-section{
+        justify-content: left;
+        height: 20%;
+    }
+    .header-left-section{
+        margin-left: -145px;
+    }
+
+    .header-middle-section{
+        height: 40%;
+        padding: 5px 10px;
+        border-radius: 10px;
+        width: 80%;
+       display: flex;
+       justify-content: center;
+
+    }
+
+    .header-middle-section input{
+        width: 60vw;
+    }
+
+    .header-middle-section input, .header-middle-section i{
+        font-size: 4vw;
+    }
+
+    
+    .header-middle-section input{
+        font-size: 4vw;
+    }
+    
+    .header-middle-section i{
+        font-size: 4vw;
+    }
+    
+    .profile{
+        display: block;
+        font-size: 10vw;
+        position: absolute;
+        right: 25px;
+        top: -10px;
+    }
+
+    .paan-banner{
+        display: none;
+    }
+
+
+    /* middle content */
+    .coupon-list-wrapper{
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 0.33%;
+    }
+    
+    .coupon-image-container{
+        flex-basis: 33%;
+    }
+
+    .display-items-container{
+        flex-wrap: wrap;  
+        gap: 0.1%;
+    }
+    .display-items-image-box{
+        flex-basis: 32%;
+    }
+
+    .catagory-products-container{
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+    .catagory-individual-product{
+        flex-basis: 40%;
+        margin-bottom: 15px;
+    }
+    .product-title{
+        font-size: 3vw;
+    }
+    .catagory-title h3{
+        font-size: 4vw;
+    }
+    .catagory-product-text p{
+        color: gray;
+        font-size: 4vw;
+    }
+    
+    .catagory-product-price span{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    
+    .catagory-product-price button{
+        font-size: 3vw;
+    }
+
+    /* footer */
+    footer{
+        margin-top: 30px;
+    }
+    .footer-upper-section{  
+       flex-direction: column;
+    }
+    .footer-useful-links-container h3, .footer-catagories-container h3{
+        font-size: 4vw;
+        color: red;
+    }
+    .catagory-titles span {
+        font-size: 4vw;
+    }
+    .links-wrapper span, .catagories-wrapper span{
+        font-size: 3vw;
+    }
+    .footer-lower1{
+        flex-direction: column;
+        padding: 10px;
+        gap: 0;
+    }
+    
+    .footer-lower1-left {
+        font-size: 3.2vw;
+    }
+    .footer-lower1-middle{
+        font-size: 4vw;
+        gap: 1rem  ;
+    }
+    .footer-lower1-middle span{
+        font-size: 3.5vw;
+    }
+    .footer-lower2{
+        font-size: 3.2vw;
+    }
+    .google-play-image{
+        width: 15vw;
+    }
+    
+    .play-store-image{
+        width: 25vw;
+    }
+
+    .social-icons {
+        height: 30px;
+        width: 30px;
+    }
+    .social-icons i{
+        font-size: 4vw;
     }
 }
