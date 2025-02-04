@@ -477,7 +477,7 @@ footer .footer-catagories-container{
 
 /* -----------------tablet responsive--------------- */
 
-@media only screen and (max-width : 1020px) {
+@media only screen and (max-width : 1020px) and(min-width: 401px){
     header{
         height: 150px;
         flex-direction: column;
