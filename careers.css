@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    /* border: 2px solid black; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #F8CB46;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    max-width: 100vw;
+}
+
+.logo{
+    height: 60px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px 10px;
+}
+
+nav .nav-links ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+nav .nav-links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    /* transition: all 9s; */
+}
+
+li a:hover{
+    cursor: pointer;
+    border-bottom: 3px solid green;
+    /* transition: all 1s; */
+}
+
+#bar{
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* --------------------page content */
+
+/* --------parallax-section------------ */
+
+/* Upper part css */
+
+.parallax-section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.header-bg{
+    position: relative;
+    width: 100%;  
+    height: 500px;
+    /* background-image: url(./img/career-masthead-desktop.webp);
+    background: linear-gradient(to bottom, #F8CB46 50%, #4CAF50 50%); */
+
+    background-image: 
+    linear-gradient(to bottom, rgba(248, 203, 70, 0.3) 0%, rgba(248, 203, 70, 0.3) 45%, rgba(26, 139, 29, 0.5) 55%, rgba(60, 169, 63, 0.9) 100%), 
+    url(./img/career-masthead-desktop.webp);
+
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color:#F8CB46;
+    background-size: cover;
+}
+
+
+
+.header-bg  h1{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 0 10%;
+
+    gap: 50px;
+    
+}
+
+
+.content-one p{
+    /* margin-bottom: 40px; */
+    line-height: 1.5;
+
+    text-align: justify;
+}
+
+
+.content-two img{
+    width: 100%;
+    /* height: 500px; */
+}
+
+
+/* h2 style */
+
+.title-part{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+.content-three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    /* gap: 50px; */
+    gap: 10%;
+    
+    width: 100%;
+    
+    /* border: 2px solid black; */
+
+    /* padding-bottom: 20px; */
+}
+
+.con-Th-title{
+    width: 100%;
+    text-align: left;
+}
+
+
+.three-one,.three-two h3{
+    /* margin-bottom: 10px; */
+}
+
+.three-one p{
+    text-align: justify;
+    padding-right: 10px;
+}
+.three-two p{
+    text-align: justify;
+    padding-right: 10px;
+}
+
+.three-one,.three-two{
+    box-shadow: 0 0px 5px rgba(0,0,0,0.3);
+}
+
+.Th-bot-para{
+    margin-top: 20px;
+}
+
+.three-one{
+    /* width: 40%;*/
+    flex-basis: 46%;
+    border-radius: 5px;
+
+    /* padding: 20px; */
+
+    /* border: 2px solid red; */
+}
+
+.three-one img{
+    width: 100%;
+
+}
+
+
+.three-two{
+    /* width: 40%; */
+    flex-basis: 46%;
+    border-radius: 5px;
+
+    /* padding: 20px; */
+    /* border: 2px solid green; */
+}
+
+.three-two img{
+    width: 100%;
+
+}
+
+.cont-three-wrapper{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8%;
+
+    /* border: 2px solid black; */
+
+    /* padding: 10px; */
+    /* margin: 30px; */
+}
+
+.content-four{
+    width: 100%;
+}
+
+.four-upper img{
+    width: 100%;
+}
+
+.four-bottom h3{
+    margin: 20px 0;
+}
+
+.four-bottom p{
+    font-size: 16px;
+    line-height: 1.5;
+
+    text-align: justify;
+}
+
+
+/* Fifth part :- How we nurture you */
+
+.content-five{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fifth-parent-box{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fifth-parent-upper{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    /* justify-content: center; */
+}
+
+.fifth-parent-lower{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 8%;
+
+    margin-top: 30px;
+    /* justify-content: center; */
+}
+
+.upper-box-one{
+    flex-basis: 46%;
+}
+
+.upper-box-one img{
+    width: 100%;
+}
+
+.upper-box-one,.upper-box-two p{
+    text-align: justify;
+}
+
+.upper-box-two{
+    flex-basis: 46%;
+}
+
+.upper-box-two img{
+    width: 100%;
+}
+
+
+.fif-con-title{
+    margin: 10px 0;
+}
+
+
+/* media query */
+@media only screen and (max-width:680px){
+    
+    .nav-links li{
+        display: none;
+    }
+
+    .cont-three-wrapper{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 30px;
+
+    }
+
+    .fifth-parent-box{
+        width: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .fifth-parent-upper{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+        /* margin-bottom: 20px; */
+        gap: 20px;
+    }
+
+    .fifth-parent-lower{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 20px;
+    }
+    
+}
